@@ -1,6 +1,5 @@
 import React from 'react'
 import { siteConfig } from '../siteConfig'
-import { ExpressCalculator } from './ExpressCalculator'
 
 export const Hero: React.FC = () => {
   return (
@@ -72,9 +71,102 @@ export const Hero: React.FC = () => {
             </p>
           </div>
 
-          {/* Right Column: Interactive Express Calculator */}
+          {/* Right Column: Visual Trust & Real Equipment Showcase (replaces calculator) */}
           <div className="lg:col-span-6">
-            <ExpressCalculator />
+            <div className="relative rounded-2xl border-2 border-emerald-600/30 bg-white p-5 sm:p-6 shadow-xl shadow-slate-200/70">
+              {/* Featured Real Photo of Fleet */}
+              <div className="relative overflow-hidden rounded-xl bg-slate-100 aspect-[16/10]">
+                <img
+                  src="/images/uts-truck-and-trailer.jpg"
+                  alt="Ultimate Tree Service LLC commercial truck and trailer rig"
+                  className="h-full w-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-slate-950/20" />
+                
+                {/* Floating Badges on image */}
+                <div className="absolute top-3 left-3">
+                  <div className="inline-flex items-center gap-1.5 rounded-lg bg-white/95 px-3 py-1.5 shadow-md backdrop-blur-md">
+                    <span className="text-amber-500 text-xs font-black">★★★★★</span>
+                    <span className="text-xs font-black text-slate-900">{siteConfig.rating}</span>
+                    <span className="text-[11px] text-slate-500 font-medium">({siteConfig.reviewCount} reviews)</span>
+                  </div>
+                </div>
+
+                <div className="absolute top-3 right-3">
+                  <span className="inline-flex items-center gap-1 rounded-lg bg-emerald-600/90 text-white text-[11px] font-bold px-2.5 py-1.5 shadow-md backdrop-blur-md">
+                    <span className="h-1.5 w-1.5 rounded-full bg-white animate-pulse" />
+                    {siteConfig.licenseBadge}
+                  </span>
+                </div>
+
+                <div className="absolute bottom-3 left-3 right-3 text-white">
+                  <div className="text-xs font-bold uppercase tracking-wider text-emerald-300">
+                    {siteConfig.lang === 'ru' ? 'Собственная техника' : 'Commercial Rig In Action'}
+                  </div>
+                  <div className="text-sm font-extrabold text-white">
+                    {siteConfig.lang === 'ru' ? 'Вышка Altec, гидрогрейфер и дробилка пней' : 'Altec Bucket Truck, Grapple Hauler & Stump Grinder'}
+                  </div>
+                </div>
+              </div>
+
+              {/* 2-Column Real Case Highlights */}
+              <div className="mt-4 grid grid-cols-2 gap-3">
+                <div className="flex items-center gap-2.5 rounded-xl border border-slate-200 bg-slate-50 p-2.5">
+                  <img
+                    src="/images/uts-crane-pool-protection.jpg"
+                    alt="Crane over pool enclosure"
+                    className="h-12 w-12 rounded-lg object-cover shrink-0 border border-slate-200"
+                  />
+                  <div className="min-w-0">
+                    <div className="text-xs font-bold text-slate-900 truncate">
+                      {siteConfig.lang === 'ru' ? 'Над бассейнами' : 'Pool Cage Safe'}
+                    </div>
+                    <div className="text-[11px] text-slate-500 truncate">
+                      {siteConfig.lang === 'ru' ? 'Спил краном на весу' : 'Air-lifted crane cuts'}
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-2.5 rounded-xl border border-slate-200 bg-slate-50 p-2.5">
+                  <img
+                    src="/images/uts-roof-clearance-bucket.jpg"
+                    alt="Roof clearance trimming"
+                    className="h-12 w-12 rounded-lg object-cover shrink-0 border border-slate-200"
+                  />
+                  <div className="min-w-0">
+                    <div className="text-xs font-bold text-slate-900 truncate">
+                      {siteConfig.lang === 'ru' ? 'Над крышами' : 'Roof Clearance'}
+                    </div>
+                    <div className="text-[11px] text-slate-500 truncate">
+                      {siteConfig.lang === 'ru' ? 'Защита черепицы' : 'Tile roof protection'}
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Instant Owner Photo Quote Banner */}
+              <div className="mt-4 rounded-xl border border-amber-300 bg-amber-50/80 p-4">
+                <div className="flex items-center justify-between gap-3">
+                  <div>
+                    <span className="text-[11px] font-bold uppercase tracking-wider text-amber-800">
+                      {siteConfig.lang === 'ru' ? '⚡ Быстрая оценка за 15 минут' : '⚡ 15-Minute Photo Estimate'}
+                    </span>
+                    <h3 className="text-sm font-bold text-slate-900">
+                      {siteConfig.lang === 'ru'
+                        ? 'Отправьте фото дерева Роберту и Кэлвину'
+                        : 'Text photos directly to Robert & Calvin'}
+                    </h3>
+                  </div>
+                  <a
+                    href={`sms:${siteConfig.phoneRaw}?&body=${encodeURIComponent(siteConfig.lang === 'ru' ? 'Здравствуйте! Отправляю фото дерева для расчета:' : 'Hi Robert & Calvin, here are photos of my tree/stump for an estimate:')}`}
+                    className="shrink-0 inline-flex items-center justify-center gap-1.5 rounded-xl bg-amber-500 px-4 py-2.5 text-xs font-extrabold text-slate-950 shadow-md shadow-amber-500/25 transition hover:bg-amber-600 active:scale-95"
+                  >
+                    <span>{siteConfig.ui.textPhotos}</span>
+                    <span>→</span>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
