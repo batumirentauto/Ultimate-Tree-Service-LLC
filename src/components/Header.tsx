@@ -3,21 +3,21 @@ import { siteConfig } from '../siteConfig'
 
 export const Header: React.FC = () => {
   return (
-    <header className="sticky top-0 z-40 w-full border-b border-neutral-800 bg-neutral-950/95 backdrop-blur-md">
+    <header className="sticky top-0 z-40 w-full border-b border-slate-200 bg-white/95 backdrop-blur-md">
       {/* Top micro-bar for trust & license */}
-      <div className="border-b border-neutral-800/80 bg-neutral-900/60 px-4 py-1.5 text-xs text-neutral-300">
+      <div className="border-b border-slate-200/80 bg-slate-50/90 px-4 py-1.5 text-xs text-slate-600">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-3">
           <div className="flex items-center gap-3">
-            <span className="inline-flex items-center gap-1.5 font-medium text-emerald-400">
-              <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />
+            <span className="inline-flex items-center gap-1.5 font-semibold text-emerald-700">
+              <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
               {siteConfig.licenseBadge}
             </span>
-            <span className="hidden text-neutral-500 sm:inline">•</span>
-            <span className="hidden text-neutral-300 sm:inline">
-              {siteConfig.lang === 'ru' ? 'График: 06:30 – 21:30 (без выходных)' : 'Open Daily: 6:30 AM – 9:30 PM'}
+            <span className="hidden text-slate-300 sm:inline">•</span>
+            <span className="hidden text-slate-600 sm:inline">
+              {siteConfig.workingHours}
             </span>
-            <span className="hidden text-neutral-500 md:inline">•</span>
-            <span className="hidden text-neutral-400 md:inline">
+            <span className="hidden text-slate-300 md:inline">•</span>
+            <span className="hidden text-slate-500 md:inline">
               {siteConfig.experienceYears} {siteConfig.ui.inBusiness}
             </span>
           </div>
@@ -27,23 +27,23 @@ export const Header: React.FC = () => {
               href={siteConfig.mapsUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 hover:opacity-85 transition"
+              className="flex items-center gap-1.5 hover:opacity-85 transition"
               title="Google Maps Profile"
             >
-              <div className="flex text-amber-400" aria-label="5 stars">
+              <div className="flex text-amber-500 text-sm" aria-label="5 stars">
                 {'★★★★★'}
               </div>
-              <span className="font-semibold text-neutral-200">
+              <span className="font-bold text-slate-800">
                 {siteConfig.rating}
               </span>
-              <span className="text-neutral-400">
+              <span className="text-slate-500">
                 ({siteConfig.reviewCount} {siteConfig.ui.googleReviews})
               </span>
             </a>
 
             {/* Language status indicator */}
-            <span className="hidden sm:inline-flex items-center gap-1 text-[11px] font-mono px-2 py-0.5 rounded bg-neutral-800 text-neutral-400 border border-neutral-700">
-              <span className="text-emerald-400 uppercase font-bold">{siteConfig.lang}</span>
+            <span className="hidden sm:inline-flex items-center gap-1 text-[11px] font-mono px-2 py-0.5 rounded bg-slate-100 text-slate-600 border border-slate-200">
+              <span className="text-emerald-700 uppercase font-bold">{siteConfig.lang}</span>
             </span>
           </div>
         </div>
@@ -53,11 +53,11 @@ export const Header: React.FC = () => {
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
         <div className="min-w-0 flex-1">
           <a href="#" className="group block focus:outline-none">
-            <span className="block text-sm font-extrabold tracking-tight text-white group-hover:text-emerald-400 sm:text-xl leading-tight">
-              <span className="sm:hidden">{siteConfig.shortName} <span className="font-normal text-xs text-neutral-400 block">{siteConfig.lang === 'ru' ? 'Спил деревьев и пней' : 'Tree & Stump Care'}</span></span>
+            <span className="block text-base font-extrabold tracking-tight text-slate-900 group-hover:text-emerald-700 sm:text-xl leading-tight">
+              <span className="sm:hidden">{siteConfig.shortName} <span className="font-normal text-xs text-slate-500 block">{siteConfig.lang === 'ru' ? 'Спил деревьев и пней' : 'Tree Removal & Trimming'}</span></span>
               <span className="hidden sm:inline">{siteConfig.businessName}</span>
             </span>
-            <span className="hidden text-xs text-neutral-400 md:block mt-0.5">
+            <span className="hidden text-xs text-slate-500 md:block mt-0.5 font-medium">
               {siteConfig.tagline}
             </span>
           </a>
@@ -66,11 +66,11 @@ export const Header: React.FC = () => {
         <div className="flex items-center gap-2 sm:gap-3 shrink-0">
           {/* Quick text quote button (desktop/tablet) */}
           <a
-            href={`sms:${siteConfig.phoneRaw}?&body=${encodeURIComponent(siteConfig.lang === 'ru' ? 'Здравствуйте, отправляю фото пня/дерева для расчета стоимости:' : 'Hi Brad, here are photos of my stump/tree for an estimate:')}`}
-            className="hidden items-center gap-2 rounded-xl border border-neutral-700 bg-neutral-900 px-3.5 py-2 text-sm font-semibold text-neutral-200 transition hover:border-emerald-500 hover:text-white lg:inline-flex"
+            href={`sms:${siteConfig.phoneRaw}?&body=${encodeURIComponent(siteConfig.lang === 'ru' ? 'Здравствуйте! Отправляю фото дерева/пня для расчета стоимости:' : 'Hi Robert & Calvin, here are photos of my tree/stump for an estimate:')}`}
+            className="hidden items-center gap-2 rounded-xl border border-slate-300 bg-white px-3.5 py-2 text-sm font-semibold text-slate-700 transition hover:border-emerald-600 hover:text-emerald-700 hover:bg-slate-50 shadow-sm lg:inline-flex"
           >
             <svg
-              className="h-4 w-4 text-emerald-400"
+              className="h-4 w-4 text-emerald-600"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -93,7 +93,7 @@ export const Header: React.FC = () => {
           {/* Primary phone call button */}
           <a
             href={`tel:${siteConfig.phoneRaw}`}
-            className="inline-flex items-center justify-center gap-2 rounded-xl bg-emerald-600 px-3.5 py-2.5 sm:px-4 sm:py-2.5 text-xs sm:text-sm font-bold text-white shadow-md shadow-emerald-950/40 transition hover:bg-emerald-500 active:scale-95 shrink-0 whitespace-nowrap"
+            className="inline-flex items-center justify-center gap-2 rounded-xl bg-emerald-600 px-4 py-2.5 sm:px-5 sm:py-2.5 text-xs sm:text-sm font-bold text-white shadow-md shadow-emerald-600/25 transition hover:bg-emerald-700 active:scale-95 shrink-0 whitespace-nowrap"
           >
             <svg
               className="h-4 w-4 shrink-0"

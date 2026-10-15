@@ -1,213 +1,214 @@
 export const siteConfigEn = {
   lang: "en",
-  businessName: "Brad Frederick's Stump Grinding & Tree Care",
-  legalName: "Brad Frederick's LLC",
-  shortName: "Brad Frederick's",
-  tagline: "Commercial Equipment • Owner-Operated • Straightforward Pricing",
-  phone: "(941) 730-0001",
-  phoneRaw: "+19417300001",
-  city: "Bradenton & Sarasota",
+  businessName: "Ultimate Tree Service LLC",
+  legalName: "Ultimate Tree Service LLC",
+  shortName: "Ultimate Tree Service",
+  tagline: "Owner-Operated • Crane & 60ft Bucket Truck • Licensed & Fully Insured",
+  phone: "(941) 361-9032",
+  phoneRaw: "+19413619032",
+  city: "Sarasota",
   state: "FL",
-  zip: "34209",
-  streetAddress: "3911 Riverview Blvd",
-  fullAddress: "3911 Riverview Blvd, Bradenton, FL 34209",
-  mapsUrl: "https://maps.app.goo.gl/b9HaJ71cuTyvJw2JA",
-  rating: "5.0",
-  reviewCount: "86",
+  zip: "34240",
+  streetAddress: "1820 Par Pl",
+  fullAddress: "1820 Par Pl, Sarasota, FL 34240",
+  mapsUrl: "https://maps.google.com/?q=1820+Par+Pl,+Sarasota,+FL+34240",
+  rating: "4.9",
+  reviewCount: "129",
   licenseBadge: "Licensed & Fully Insured",
-  experienceYears: "26+",
-  workingHours: "Mon – Sun: 6:30 AM – 9:30 PM (7 Days a Week)",
-  addressNotes: "HQ Base: 3911 Riverview Blvd, Bradenton, FL 34209 • Direct Dispatch across Manatee & Sarasota Counties",
+  experienceYears: "15+",
+  workingHours: "Open 24/7 (Emergency Storm Response & Daily Operations)",
+  addressNotes: "HQ: 1820 Par Pl, Sarasota, FL 34240 • Serving Sarasota, Bradenton, Lakewood Ranch & Venice",
 
   hero: {
-    badge: "Serving Sarasota & Manatee Counties Since 1998",
-    headline: "Tree Removal & Stump Grinding with Commercial-Grade Equipment",
-    subhead: "Owner on every job with compact commercial track equipment. We pass 36\" residential gates, protect underground utilities, and leave your property level and clean.",
-    ctaCall: "Call (941) 730-0001",
-    ctaText: "Text Photos for an Estimate"
+    badge: "Top-Rated Tree Experts in Sarasota • 129+ Google Reviews (4.9 ★)",
+    headline: "Precision Tree Removal & Trimming with Zero Property Damage",
+    subhead: "Owner-operated by Robert & Calvin. We use our own heavy crane, bucket lift, and Bobcat to safely remove giant oaks, trim high palms, and grind stumps — leaving your roof, pool cage, and lawn spotless.",
+    ctaCall: "Call (941) 361-9032",
+    ctaText: "Text Photos for Quick Quote"
   },
 
   trustBadges: [
-    { title: "Owner-Operated", desc: "Direct machine work by Brad — no brokers, salesmen, or subcontracted crews" },
-    { title: "36\" Gate Clearance", desc: "Fits residential side gates without fence panel tear-down or 15-ton crane damage" },
-    { title: "True Below-Grade Finish", desc: "Deep root pulverization ready for sod installation, pavers, or fence posts" },
-    { title: "Thorough Cleanup", desc: "Raked, blown clear with commercial blowers, and debris leveled or hauled away" }
+    { title: "Owner-Operated on Every Job", desc: "Robert and Calvin personally work on your site — never delegated to casual day laborers" },
+    { title: "Heavy Crane & 60ft Bucket Lift", desc: "Controlled sectional dismantling over delicate pool cages, tile roofs, and tight fence lines" },
+    { title: "Zero-Trace Site Cleanup", desc: "Raked, blown clean with commercial blowers, and all debris hauled away with our grapple truck" },
+    { title: "100% Licensed & Fully Insured", desc: "Comprehensive liability coverage protecting your residential structures, irrigation, and boundaries" }
   ],
 
   services: [
     {
+      id: "precision-tree-removal",
+      title: "Precision Tree Removal",
+      tagline: "Crane & Bucket Lift Assisted",
+      desc: "Controlled takedown of dangerous, dead, or overgrown trees of any height. We lift sections safely over roofs and pool screens without impacting your property."
+    },
+    {
+      id: "tree-trimming-pruning",
+      title: "Oak & Tree Trimming",
+      tagline: "Canopy Raising & Roof Clearance",
+      desc: "Pruning heavy overhanging limbs, thinning dense crowns to resist hurricane-force winds, and clearing clearance above garages and rooflines."
+    },
+    {
+      id: "palm-tree-trimming",
+      title: "Palm Tree Trimming & Care",
+      tagline: "Healthy & Aesthetic Palm Shaping",
+      desc: "Expert cleaning, dead frond shaving, and seed pod removal for all Florida palms, ensuring optimal health, curb appeal, and storm resilience."
+    },
+    {
       id: "stump-grinding",
-      title: "Commercial Stump Grinding",
-      tagline: "Any Diameter — Deep Below Grade",
-      desc: "Grinding stumps and lateral roots deep enough below the surface so you can replant grass, install fence lines, or expand driveway parking."
+      title: "Deep Stump Grinding",
+      tagline: "True Below-Grade Pulverization",
+      desc: "High-power stump grinders chew stumps and surface roots 8–14 inches below grade. Leveled and raked ready for sod, paver patios, or fence posts."
     },
     {
-      id: "utility-safe-clearing",
-      title: "Root Clearing Near Utilities",
-      tagline: "Careful Manual & Machine Control",
-      desc: "Controlled clearance around surface water pipes, irrigation lines, backflows, and well pumps to clear roots without damaging infrastructure."
+      id: "storm-cleanup-emergency",
+      title: "24/7 Storm & Hurricane Response",
+      tagline: "Rapid Hazard Clearance",
+      desc: "Emergency removal of split oaks, fallen trunks, and uprooted trees after severe Florida weather. Fair rates with immediate dispatcher response."
     },
     {
-      id: "fence-boundary-prep",
-      title: "Pre-Fence Line Clearing",
-      tagline: "Keep Your Fencing Crew on Schedule",
-      desc: "Fast removal of boundary stumps and invasive root lines along property borders so fence contractors have clean, level ground to work with."
-    },
-    {
-      id: "storm-response",
-      title: "Storm & Hurricane Hazard Takedown",
-      tagline: "Clear Up Uprooted Hazards",
-      desc: "Removing leaning trunks, heavy broken limbs, and uprooted root balls after high winds. Fair, consistent rates without post-storm price gouging."
-    },
-    {
-      id: "hoa-multi-stump",
-      title: "Multi-Stump & HOA Property Work",
-      tagline: "Common Areas & Sidewalks",
-      desc: "Clearing clusters of stumps along community sidewalks, neighborhood entrances, and parking borders with full commercial liability insurance."
-    },
-    {
-      id: "tight-access-terrain",
-      title: "Tight-Access & Canal Bank Work",
-      tagline: "Lanai & Yard-Conscious Positioning",
-      desc: "Positioning compact machinery carefully along canal slopes, near seawalls, and tight pool screen enclosures without damaging property."
+      id: "debris-hauling-bobcat",
+      title: "Debris Hauling & Bobcat Service",
+      tagline: "Grapple Loader & Site Clearing",
+      desc: "Heavy hydraulic grapple truck and Bobcat loaders haul away tons of wood, brush, and root debris, leaving your yard cleaner than before."
     }
   ],
 
   howEstimatesWork: {
     title: "How to Get a Quick Estimate by Text",
-    step1: "Take 2 clear photos of the tree or stump from different angles.",
-    step2: "Send a rough measurement or note any tight gates, pipes, or slopes.",
-    step3: "Text them to (941) 730-0001. Brad will review and reply with a straightforward quote."
+    step1: "Snap 2 clear photos of the tree, limbs, or stump from wide and close angles.",
+    step2: "Mention any tight gates, overhead wires, pool enclosures, or sprinkler lines.",
+    step3: "Text them to (941) 361-9032. Robert or Calvin will review and reply with a fast, honest quote."
   },
 
   realisticComparison: {
-    title: "Why Heavy Commercial Track Equipment Matters",
+    title: "Why an Owner-Operated Crew with Heavy Equipment Wins",
     diyRental: [
-      "Lightweight rental machines bounce on hard oak roots and take hours",
-      "Struggles to get below ground level, leaving surface roots behind",
-      "You handle pickup, trailer towing, machine deposits, and fuel",
-      "Flying wood chips can easily hit lanai screens without proper shielding"
+      "Unlicensed contractors hire street laborers with no aerial rigging skills",
+      "Drop heavy limbs that smash delicate pool screen cages and crack roof tiles",
+      "Feed you false information to remove healthy trees just to inflate the bill",
+      "Leave heavy log rounds, branches, and torn-up turf for you to clean up"
     ],
     commercialWay: [
-      "High-horsepower track grinder cuts through large stumps in 30-45 minutes",
-      "Deep pulverization below grade so grass or posts go in cleanly",
-      "Brad brings the machine, does the heavy grinding, and rakes the area",
-      "Full deflector curtains keep debris contained and away from structures"
+      "Owners Robert & Calvin personally operate the heavy equipment on every job",
+      "Commercial crane & bucket lift hold branches in mid-air with zero drop hazard",
+      "Honest arborists: we tell you what can be safely preserved vs. what is hazardous",
+      "Zero-Trace Cleanup: raked, blown clean, roofs swept, and all debris hauled away"
     ]
   },
 
   gallery: {
-    badge: "Equipment in Action • Real Florida Job Sites",
-    title: "Commercial Machinery Operated Directly by Brad",
-    subhead: "No rented push-mowers or subcontracted crews. We show up with professional Rayco 4x4 machinery built for deep below-grade root pulverization and tight 36\" residential gates.",
+    badge: "Real Equipment • Real Florida Work Sites",
+    title: "Commercial Equipment Operated Directly by the Owners",
+    subhead: "No rental toys or casual subcontractors. Robert and Calvin arrive with our dedicated crane, Altec bucket truck, grapple loader, and Stihl commercial saws.",
     items: [
       {
-        src: "/images/brad-and-truck.jpg",
-        alt: "Brad Frederick with his Ford F-150 work truck and commercial trailer rig",
-        title: "Brad & Commercial Rig",
+        src: "/images/uts-truck-and-trailer.jpg",
+        alt: "Ultimate Tree Service LLC commercial bucket truck and branded trailer rig",
+        title: "Ultimate Tree Service Fleet",
         badge: "Owner-Operated",
-        desc: "Ford F-150 and heavy-duty trailer carrying the Rayco RG37 grinder across Sarasota & Manatee."
+        desc: "Custom Altec bucket truck and commercial dump trailer with grapple setup ready for daily dispatch in Sarasota."
       },
       {
-        src: "/images/brad-operating-controls.jpg",
-        alt: "Brad Frederick in safety gear operating controls next to a residential fence",
-        title: "Precision Boundary Grinding",
-        badge: "Fence-Safe Precision",
-        desc: "Operating controls with full protective PPE and deflector curtains right next to boundary fences."
+        src: "/images/uts-crane-pool-protection.jpg",
+        alt: "Heavy crane lifting tree limbs over screened pool enclosure",
+        title: "Precision Crane Over Pool Cage",
+        badge: "Zero Property Damage",
+        desc: "Heavy mobile crane lifting massive oak sections directly over screened-in lanais without touching a single screen."
       },
       {
-        src: "/images/brad-equipment-plaque.jpg",
-        alt: "Brad Frederick's LLC Since 1998 commercial plaque on machinery",
-        title: "Since 1998 Trade Heritage",
-        badge: "26+ Years Experience",
-        desc: "Official commercial equipment badge: Brad Frederick's LLC, serving Bradenton & Sarasota since 1998."
+        src: "/images/uts-crane-and-bucket-truck.jpg",
+        alt: "Crane and 60ft bucket truck operating together on tall Florida trees",
+        title: "Crane & 60ft Bucket Truck",
+        badge: "Heavy Commercial Gear",
+        desc: "Dual heavy equipment setup tackling hazardous 70ft+ Florida pine and live oak trees safely."
       },
       {
-        src: "/images/rayco-grinding-stump.jpg",
-        alt: "Rayco RG37 4x4 machine grinding massive stump deep below grade",
-        title: "Deep Below-Grade Grinding",
-        badge: "True Below-Grade Finish",
-        desc: "Heavy 4x4 cutter wheel chewing through large oak stumps inches from house walls and AC units."
+        src: "/images/uts-roof-clearance-bucket.jpg",
+        alt: "Arborist trimming tree branches over residential tile roof from bucket lift",
+        title: "Roofline Hazard Clearance",
+        badge: "Roof-Safe Rigging",
+        desc: "Trimming massive overhanging oak limbs above fragile Spanish barrel tile roofs with surgical precision."
       },
       {
-        src: "/images/brad-under-oak.jpg",
-        alt: "Brad working under majestic moss oak in residential yard with commercial blower",
-        title: "Full PPE & Site Cleanup",
-        badge: "Clean Job Guarantee",
-        desc: "Brad in full gear after clearing a giant root ball under native mossy Florida live oaks."
+        src: "/images/uts-grapple-debris-hauling.jpg",
+        alt: "Hydraulic grapple loader lifting massive branch pile into dump truck",
+        title: "Grapple Loader Debris Hauling",
+        badge: "Zero-Trace Cleanup",
+        desc: "Hydraulic grapple truck loading tons of heavy branch piles straight into our dump container — leaving your turf clean."
       },
       {
-        src: "/images/finished-yard-sod.jpg",
-        alt: "Perfect finished level soil circle ready for sod or fence posts",
-        title: "Ready for Sod & Fencing",
-        badge: "Turnkey Finish",
-        desc: "Completely pulverized, leveled, and raked ground ready for fence contractors or fresh sod."
+        src: "/images/uts-massive-trunk-stihl.jpg",
+        alt: "Large cut oak tree trunk with commercial Stihl chainsaw",
+        title: "Heavy Timber Sectioning",
+        badge: "Below-Grade Finish",
+        desc: "Commercial Stihl pro chainsaws sectioning mature oak trunks down to the soil before deep stump grinding."
       }
     ]
   },
 
   reviews: [
     {
-      author: "Brandon Clark",
+      author: "Helga Keller",
       rating: 5,
-      tag: "Commercial Beast vs Toy Rental",
-      text: "A neighbor referred Brad for stump grinding. He’s a pro: courteous, responsive, available quickly, and went above and beyond without asking for more than quoted. His machine is a beast. If you think you’ll save money renting the toy-version of a stump grinder, you’ll regret it and call Brad anyway. Call him first!",
+      tag: "45-Year Oak • 7:00 AM Response",
+      text: "My beautiful huge oak tree of 45 years had split and fallen over. I called at 7:00 am and Robert the owner answered and told me he would be here in 2 hours and so they were. They came with all the appropriate equipment including a crane and bucket lift — these two men worked nonstop relentlessly for two days straight. The respect they had for my property to do as little damage as possible was amazing. 10 stars across the board!",
       source: "Verified Google Review"
     },
     {
-      author: "Erica Wright",
+      author: "Paul Sloan",
       rating: 5,
-      tag: "Next-Morning Arrival",
-      text: "Brad is a true professional. He was at my house the morning after I contacted him for a quote. Fair price, beautifully maintained equipment and extremely knowledgeable. I would recommend him to anyone who wants the job done right, right away.",
+      tag: "Owners On Site • No Day Laborers",
+      text: "Calvin and Rob responded to my request for an estimate without delay. The Tree Service industry in Florida seems to be divided into two camps; professionals and hacks... Thrilled to say that these guys are real professionals! What impressed me is that they owned the company and did all the work themselves, no day laborers just them. Highly recommend Calvin and Rob!",
       source: "Verified Google Review"
     },
     {
-      author: "Eric A. Logan",
+      author: "Kyle Daquanna",
       rating: 5,
-      tag: "Pipes & Well Pump Safe",
-      text: "Extensive root removal over a 15x30 delicate area directly over all my utilities and well pump. Brad is certainly a MASTER operator, clearing the area without damaging any utility lines. Fair price, on schedule, and completed in a very professional manner. Highly recommend!",
+      tag: "Honest Advice • Zero High-Pressure",
+      text: "AMAZING COMPANY! Not only were they competitive on price and did some of the best tree work I've ever seen, but they communicated from start to finish. They offered consultative advice and told me which trees I should leave alone vs trees that were dangerous. Other companies were trying to get me to remove all big trees with false info. This team was 100% honest!",
+      source: "Local Guide • 13 Reviews"
+    },
+    {
+      author: "Ursula Tucker",
+      rating: 5,
+      tag: "Affordable & Careful With Landscaping",
+      text: "Robert and his partner were right on time, very professional and friendly. They did the work quickly and cleaned up nicely afterwards. They were very careful not to disturb the surrounding landscaping and they were much more affordable than 2 other companies. I would highly recommend them!",
       source: "Verified Google Review"
     },
     {
-      author: "Gina Werts (HOA Board)",
+      author: "Lauren Kowal",
       rating: 5,
-      tag: "18-Stump Post-Hurricane Takedown",
-      text: "Incredibly impressed with Brad Frederick's LLC! Arrived on time and ground down 18 extremely large stumps on our HOA property after Hurricane Milton. Took the time to clean off the very long stretch of sidewalk for pedestrian traffic. Fantastic price and attention to detail!",
+      tag: "Worth Every Penny • Spotless Cleanup",
+      text: "Ultimate Tree Service did an amazing job. After calling around for estimates for weeks and finding out about them from word of mouth made the wait worth every penny. Took their time with extra precautions. 3 men crew waited to make sure we were happy with what they did. Their clean up left nothing behind other than what we asked for. 5 stars!",
+      source: "Local Guide • 25 Reviews"
+    },
+    {
+      author: "Michelle van Schouwen",
+      rating: 5,
+      tag: "Hurricane Tree & Stump Removal",
+      text: "We were very happy with Ultimate Tree Service LLC of Sarasota. They cut, removed, and then ground the stumps for the hurricane-damaged trees we needed removed. Their prices were fair, they came when they said they would, and did what they promised. What's more, they pretty much left no trace — no branches, twigs, or mess.",
       source: "Verified Google Review"
     },
     {
-      author: "Richard Glaspy",
+      author: "zia pina",
       rating: 5,
-      tag: "Sunday 30-Min Dispatch",
-      text: "I called Brad Sunday morning in hopes of scheduling for the week. His reply was 'I can be there in thirty minutes.' I was shocked to find someone to do the job on Sunday morning, much less same day! He was there in 30 minutes and did an excellent job. Brad answers calls 365 days a year.",
+      tag: "Pool Screen Safe • Not A Branch Touched",
+      text: "Calvin and Rob of Ultimate Tree Service were so professional in the phone calls and quote. I had a HUGE oak tree in my yard by my screened-in pool and throughout the day NOT A BRANCH touched the screen! Great clean up too. Showed up promptly at 10am and were done by 4pm. Very happy with price and work.",
       source: "Verified Google Review"
     },
     {
-      author: "Feath K",
+      author: "Bob Clinkingbeard",
       rating: 5,
-      tag: "Estimate by Text Photos",
-      text: "We needed boundary stumps removed for a fence install. Several local vendors never even returned our calls or inquiries. Brad actually answered the phone! We texted photos of the situation, he gave us an exact estimate, arrived on time, and leveled the ground cleanly for our fence crew.",
-      source: "Local Guide • 34 Reviews"
-    },
-    {
-      author: "Mary Louise Ziegler",
-      rating: 5,
-      tag: "Tight Canal Bank Clearance",
-      text: "Brad was on time and very courteous. Knew exactly what he was doing. Our stump location was quite difficult, right on the edge of a canal bank. Brad did a great job and didn’t leave a mess. Very careful positioning of heavy equipment in the yard.",
-      source: "Verified Google Review"
-    },
-    {
-      author: "Sarah Santos",
-      rating: 5,
-      tag: "Zero Pushiness • Honest Craftsman",
-      text: "One of the most pleasant experiences I have ever had dealing with a contractor. As a single woman, you never know who is trying to rip you off. Brad was polite, professional, not pushy AT ALL, and as kind as could be. Extremely reasonable and a true West Bradenton local boy you can trust 100%.",
+      tag: "Neighbors Hired Them On The Spot",
+      text: "On time. Fair price. Great service and cleanup. These guys explained how they were going to take down two trees and why they should do it that way. Then they talked to me as they were doing it and it turned out exactly like they said. Watching their work prompted a neighbor to hire them for a project!",
       source: "Verified Google Review"
     }
   ],
 
   serviceAreas: [
-    "Bradenton", "Sarasota", "Lakewood Ranch", "Palmetto",
-    "Venice", "Parrish", "Siesta Key", "Anna Maria Island", "Ellenton"
+    "Sarasota", "Bradenton", "Lakewood Ranch", "Venice",
+    "Palmer Ranch", "Siesta Key", "Lido Key", "Osprey",
+    "Nokomis", "Longboat Key", "Parrish", "Ellenton"
   ],
 
   calculator: {
@@ -216,124 +217,124 @@ export const siteConfigEn = {
     serviceLabel: "Service Type",
     services: [
       {
-        id: "stump",
-        name: "Stump Grinding",
-        sizeLabel: "Cut Diameter at Widest Point",
+        id: "tree-removal",
+        name: "Tree Removal",
+        sizeLabel: "Tree Height & Location Complexity",
         sizes: [
-          { id: "s", label: "Up to 12\" (< 30 cm)", price: "$90 – $140", time: "15–25 mins" },
-          { id: "m", label: "12\" – 24\" (30–60 cm)", price: "$160 – $260", time: "25–35 mins" },
-          { id: "l", label: "24\" – 36\" (60–90 cm)", price: "$280 – $420", time: "40–55 mins" },
-          { id: "xl", label: "36\"+ (Mature Oak/Pine)", price: "$450 – $750+", time: "60+ mins" },
+          { id: "s", label: "Small tree (< 25 ft / 8 m)", price: "$350 – $650", time: "1–2 hrs" },
+          { id: "m", label: "Medium tree (25–45 ft)", price: "$700 – $1,300", time: "2–4 hrs" },
+          { id: "l", label: "Large tree (45–70 ft Oak/Pine)", price: "$1,400 – $2,500", time: "4–6 hrs" },
+          { id: "xl", label: "Hazard tree over roof or pool cage", price: "From $2,400", time: "1–2 days" },
+        ],
+        includes: [
+          "Rigging & crane/bucket lift assisted piecemeal takedown",
+          "Zero impact on pool cages, roof tiles, and fences",
+          "Trunk bucking and complete grapple hauling",
+        ],
+      },
+      {
+        id: "trimming",
+        name: "Tree Trimming & Pruning",
+        sizeLabel: "Tree Size & Canopy Scope",
+        sizes: [
+          { id: "s", label: "Single Palm / Small Ornamental", price: "$120 – $220", time: "30–45 mins" },
+          { id: "m", label: "Medium Oak / Pine Canopy Thinning", price: "$280 – $550", time: "1–2 hrs" },
+          { id: "l", label: "Large Mature Oak (Over Roof/Pool)", price: "$600 – $1,100", time: "2–4 hrs" },
+          { id: "xl", label: "Full Property Clearance (Multiple Trees)", price: "Custom Quote", time: "Full day" },
+        ],
+        includes: [
+          "Canopy thinning for hurricane wind passage",
+          "Clearing minimum 6-10 ft away from rooflines",
+          "Raking, sweeping, and blower cleanup of all debris",
+        ],
+      },
+      {
+        id: "stump-grinding",
+        name: "Stump Grinding",
+        sizeLabel: "Stump Cut Diameter",
+        sizes: [
+          { id: "s", label: "Up to 14\" (< 35 cm)", price: "$90 – $150", time: "20–30 mins" },
+          { id: "m", label: "14\" – 24\" (35–60 cm)", price: "$160 – $280", time: "30–45 mins" },
+          { id: "l", label: "24\" – 36\" (60–90 cm)", price: "$290 – $450", time: "45–60 mins" },
+          { id: "xl", label: "36\"+ (Massive Oak / Pine Root Base)", price: "$480 – $750+", time: "1–2 hrs" },
         ],
         includes: [
           "Grinding 8\"–14\" below ground level",
-          "Chasing visible surface lateral roots",
-          "Full debris raking & chip mound leveling",
-        ],
-      },
-      {
-        id: "tree",
-        name: "Tree Removal",
-        sizeLabel: "Tree Height & Hazard Complexity",
-        sizes: [
-          { id: "s", label: "Small tree (< 25 ft / 8 m)", price: "$350 – $650", time: "1.5–2.5 hrs" },
-          { id: "m", label: "Medium tree (25–50 ft)", price: "$750 – $1,350", time: "2.5–4 hrs" },
-          { id: "l", label: "Large tree (50–75 ft oak/pine)", price: "$1,400 – $2,600", time: "4–7 hrs" },
-          { id: "xl", label: "Hazard tree over roof / pool", price: "From $2,500", time: "1–2 days" },
-        ],
-        includes: [
-          "Sectional piecemeal takedown with rigging ropes",
-          "Controlled branch lowering away from screen enclosures",
-          "Trunk bucking into manageable firewood rounds",
-        ],
-      },
-      {
-        id: "roots",
-        name: "Root Clearing",
-        sizeLabel: "Linear Footage & Utility Proximity",
-        sizes: [
-          { id: "s", label: "Spot root clearance (< 10 ft)", price: "$180 – $280", time: "30–45 mins" },
-          { id: "m", label: "Fence boundary run (10–25 ft)", price: "$300 – $480", time: "1–1.5 hrs" },
-          { id: "l", label: "Utility / Well pump zone", price: "$450 – $750", time: "2–3 hrs" },
-          { id: "xl", label: "Heavy root bed (25+ ft)", price: "From $750", time: "3+ hrs" },
-        ],
-        includes: [
-          "Careful hand exploration around PVC pipes & wire",
-          "Precision grinder positioning without striking footers",
-          "Clean grade left ready for fence installation or sod",
+          "Tracking and grinding visible surface roots",
+          "Backfilling and leveling mulch for immediate sod/replant",
         ],
       },
     ],
     ctaText: "Lock In Price by Texting Photos",
-    hint: "Real contractor market rates across Sarasota & Manatee. Final cost depends on access and tree density. Text 2 photos to Brad for a binding dollar quote.",
+    hint: "Real contractor market rates across Sarasota & Manatee. Final price depends on gate clearance and tree hazard. Text photos to Robert or Calvin for a guaranteed quote.",
   },
 
   ui: {
-    inBusiness: "In Business",
+    inBusiness: "Years Serving FL",
     googleReviews: "Google Reviews",
     textPhotos: "Text Photos",
-    callBrad: "Call Brad",
-    fastResponse: "Fast Response:",
-    fastResponseDesc: "Send 2 photos by text to get a straight dollar quote without waiting around for hours.",
+    callBrad: "Call Us",
+    fastResponse: "Immediate Response:",
+    fastResponseDesc: "Send 2 photos by text to get a straight dollar quote from Robert or Calvin within minutes.",
     heroCheckmarks: [
-      { strong: "Fixed Price Before Dispatch", text: "binding dollar quote from 2 photos in 15 mins — zero on-site price jumps" },
-      { strong: "24-Hour Urgent Response", text: "fast clearance for hazard limbs and leaning storm trunks without week-long waits" },
-      { strong: "Zero Turf Rutting & Screen Protection", text: "low-PSI rubber tracks plus heavy shielding for pool cages and windows" },
-      { strong: "$1,000,000 Commercial Liability", text: "full property coverage protecting irrigation, pipes, fences, and structures" },
+      { strong: "Owner-Operated Excellence", text: "Robert & Calvin on every site — no random day laborers or careless subcontractors" },
+      { strong: "Crane & 60ft Bucket Truck", text: "precision air-lifted cuts over tile roofs, lanais, and glass pool enclosures" },
+      { strong: "Zero-Trace Cleanup Guaranteed", text: "raked, leaf-blown, roof swept, and all debris hauled by our grapple loader" },
+      { strong: "$1,000,000+ Licensed & Fully Insured", text: "full Florida commercial liability coverage for complete peace of mind" },
     ],
     fastestEstimate: "Fastest Estimate Method",
-    estimateSub: "Skip waiting on site visits during work hours. Send photos directly from your phone for a quick, binding dollar price.",
+    estimateSub: "Skip waiting days for a contractor who might not show up. Send photos directly from your phone for a quick, binding quote.",
     step1Title: "Snap 2 Clear Photos",
-    step1Tip: "💡 Tip: Include 1 wide angle showing nearby fences/walls and 1 close-up of the base.",
-    step2Title: "Rough Size & Obstacles",
-    step2Tip: "📏 Measure across the widest point of the stump cut or trunk diameter.",
-    step3Title: "Get Fixed Dollar Quote",
-    step3Tip: "⚡ Direct review by Brad. Straightforward price without hidden add-ons.",
-    tapToText: "Tap to Text Photos to Brad:",
+    step1Tip: "💡 Tip: Include 1 wide angle showing nearby structures (roof, pool screen, fence) and 1 close-up of the tree/stump base.",
+    step2Title: "Note Any Obstacles",
+    step2Tip: "📏 Mention if it's over a roof, near pool screens, power lines, or sprinkler systems.",
+    step3Title: "Get Direct Owner Quote",
+    step3Tip: "⚡ Direct review by Robert or Calvin. Honest arborist advice without inflated sales tactics.",
+    tapToText: "Tap to Text Photos to Robert & Calvin:",
     preferCalling: "Prefer calling?",
     callDirectly: "Call directly at",
-    servicesCategory: "Dedicated Equipment Capabilities",
-    servicesTitle: "Specialized Stump Grinding & Tree Services",
-    servicesSub: "Every service is performed using dedicated commercial machinery operated directly by Brad Frederick. We do not rush jobs or leave unsightly mound leftovers.",
+    servicesCategory: "Commercial-Grade Tree Care",
+    servicesTitle: "Professional Tree Removal & Care Services",
+    servicesSub: "Every project is handled by owners Robert & Calvin using dedicated commercial equipment, heavy cranes, bucket trucks, and high-capacity grinders.",
     textForQuote: "Text for Quote",
     formQuote: "Form Quote →",
-    comparisonCategory: "Real Contractor Insights",
-    comparisonSub: "Home improvement centers advertise small wheeled grinders for rent. Here is what happens in the Florida heat compared to a dedicated commercial track machine.",
-    diyTitle: "DIY Home Center Rental",
-    diySubtitle: "The High-Effort Option",
-    diyBadge: "Hidden Time Sink",
-    diyNote: "Trade Reality: Most customers who try renting spend $250+ on rental, fuel, and trailer hitches, only to call a professional when the grinder gets stuck on lateral oak roots.",
-    commercialTitle: "Brad's Commercial Track Machine",
-    commercialSubtitle: "The Factual Contractor Way",
-    commercialBadge: "Owner on the Controls",
+    comparisonCategory: "Florida Contractor Reality",
+    comparisonSub: "The Florida tree service market has plenty of unlicensed crews. Here is the difference between hiring 'the hacks' versus Ultimate Tree Service LLC.",
+    diyTitle: "The Unlicensed 'Hacks'",
+    diySubtitle: "The High-Risk Shortcut",
+    diyBadge: "Danger & Hidden Damage",
+    diyNote: "Industry Warning: If an uninsured crew drops a branch on your roof or pool cage, your homeowner insurance may hold YOU liable. Always verify commercial liability coverage.",
+    commercialTitle: "Ultimate Tree Service LLC",
+    commercialSubtitle: "Owner-Operated & Fully Insured",
+    commercialBadge: "Robert & Calvin on Site",
     commercialRibbon: "Recommended Choice",
-    commercialNote: "No deposit. No trailer. No sore back. Brad handles the entire process.",
+    commercialNote: "No subcontractors. No property damage. Honest advice and spotless cleanup guaranteed.",
     reviewsCategory: "Verified Local Feedback",
-    reviewsSub: "Unfiltered quotes from homeowners, HOA managers, and fence contractors across",
-    reviewsBadge: "5-Star Verified",
+    reviewsSub: "Real Google reviews from homeowners and property managers across Sarasota & Manatee County",
+    reviewsBadge: "4.9-Star Verified",
     reviewsGoogle: "Google Reviews",
-    propertyOwner: "Property Owner • Florida",
+    propertyOwner: "Homeowner • Sarasota, FL",
     areasCategory: "Local Dispatch Coverage",
     areasTitle: "Service Areas Across",
-    areasSub: "Direct mobile dispatch with machine on trailer. No out-of-county travel surcharges for core coverage zones.",
+    areasSub: "Direct mobile dispatch with crane, bucket lift, and grapple trailer. No travel surcharges across Sarasota and Manatee counties.",
     checkNeighborhood: "Check Your Neighborhood",
-    dispatchNotice: "Direct dispatch trailer equipped with full safety deflector shielding & clean-up kit.",
-    formCategory: "Straightforward Estimates",
-    formTitle: "Request Your Free Project Estimate",
-    formSub: "Brad reviews all submissions personally. No high-pressure sales reps, no hidden dispatch fees.",
+    dispatchNotice: "Equipped with heavy crane, 60ft bucket lift, stump grinder, and grapple haul container.",
+    formCategory: "Direct Owner Estimate",
+    formTitle: "Request Your Free Tree Service Estimate",
+    formSub: "Robert or Calvin reviews every request personally. No high-pressure sales reps, no hidden fees.",
     formSuccessTitle: "Estimate Request Received!",
-    formSuccessSub: "Thank you. Brad will review your details and reach out shortly.",
+    formSuccessSub: "Thank you! Robert or Calvin will review your details and reach out shortly.",
     formTextPhotosNow: "Text Photos Now for Faster Quote",
     formName: "Full Name",
     formPhone: "Phone Number",
     formService: "Service Needed",
     formCityZip: "City or Zip Code",
-    formNotes: "Details (Stump Count, Gate Width, or Underground Pipes)",
-    formSubmit: "Submit for a Straightforward Estimate",
-    formUrgent: "Need an immediate reply? You can also",
+    formNotes: "Project Details (Tree height, near roof/pool screen, stump count)",
+    formSubmit: "Submit for a Free Straightforward Estimate",
+    formUrgent: "Need an emergency or same-day response? You can also",
     footerCoreServices: "Core Services",
-    footerLicensing: "Licensing & Coverage",
-    footerLiability: "Full commercial general liability coverage for residential properties, HOA common grounds, and commercial parcels.",
+    footerLicensing: "Licensing & Insurance",
+    footerLiability: "Full commercial general liability insurance protecting residential properties, HOA grounds, and commercial parcels in Florida.",
     footerRights: "All rights reserved.",
     footerModular: "Modular config: siteConfig.js"
   }

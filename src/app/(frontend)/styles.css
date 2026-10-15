@@ -5,12 +5,14 @@
 @layer base {
   html {
     scroll-behavior: smooth;
-    background-color: #0b0e10;
-    color: #f3f4f6;
+    background-color: #ffffff;
+    color: #0f172a;
     -webkit-font-smoothing: antialiased;
   }
 
   body {
     overflow-x: hidden;
+    background-color: #ffffff;
+    color: #0f172a;
   }
 }

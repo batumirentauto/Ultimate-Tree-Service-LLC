@@ -14,7 +14,7 @@ import { Footer } from '../../components/Footer'
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen bg-neutral-950 text-neutral-100 selection:bg-emerald-500 selection:text-neutral-950">
+    <div className="min-h-screen bg-white text-slate-900 selection:bg-emerald-600 selection:text-white">
       {/* Sticky top header with verification micro-bar */}
       <Header />
 
@@ -32,7 +32,7 @@ export default function HomePage() {
         {/* 6 Core Contractor Services */}
         <ServicesGrid />
 
-        {/* Technical Specification Comparison (DIY Rental vs Commercial Track Grinder) */}
+        {/* Technical Specification Comparison (DIY Rental / Hacks vs UTS) */}
         <EquipmentComparison />
 
         {/* Commercial Equipment & Real Jobs Photo Gallery */}
