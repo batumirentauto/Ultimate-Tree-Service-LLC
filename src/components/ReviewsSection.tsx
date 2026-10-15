@@ -5,7 +5,7 @@ export const ReviewsSection: React.FC<{ config?: typeof siteConfigEn }> = ({ con
   const cfg = config || siteConfig
 
   return (
-    <section id="reviews" className="py-20 bg-slate-50 border-t border-slate-200">
+    <section id="reviews" className="py-20 bg-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 border-b border-slate-200 pb-8">
@@ -28,7 +28,7 @@ export const ReviewsSection: React.FC<{ config?: typeof siteConfigEn }> = ({ con
             href={cfg.mapsUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-3 rounded-xl border border-slate-200 bg-white p-4 shrink-0 transition hover:border-emerald-500 hover:shadow-md group shadow-sm"
+            className="flex items-center gap-3 rounded-xl border border-slate-200 bg-slate-50 p-4 shrink-0 transition hover:border-emerald-500 hover:shadow-md group shadow-xs"
             title="View on Google Maps"
           >
             <div className="text-2xl font-black text-emerald-700 font-mono">
@@ -46,7 +46,7 @@ export const ReviewsSection: React.FC<{ config?: typeof siteConfigEn }> = ({ con
           {cfg.reviews.map((review) => (
             <div
               key={review.author}
-              className="flex flex-col justify-between rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition hover:border-slate-300 hover:shadow-md"
+              className="flex flex-col justify-between rounded-xl border border-slate-200 bg-slate-50/70 p-6 shadow-xs transition hover:border-emerald-400 hover:bg-white hover:shadow-md"
             >
               <div>
                 {/* Tag Badge */}

@@ -5,7 +5,7 @@ export const EquipmentComparison: React.FC<{ config?: typeof siteConfigEn }> = (
   const cfg = config || siteConfig
 
   return (
-    <section className="py-20 bg-slate-50 border-y border-slate-200">
+    <section className="py-20 bg-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="text-center max-w-3xl mx-auto">
           <span className="text-xs font-bold uppercase tracking-wider text-amber-700">
@@ -22,7 +22,7 @@ export const EquipmentComparison: React.FC<{ config?: typeof siteConfigEn }> = (
         {/* Side-by-Side Comparison Grid */}
         <div className="mt-12 grid grid-cols-1 gap-8 lg:grid-cols-2">
           {/* DIY / Unlicensed Hacks */}
-          <div className="rounded-2xl border border-red-200 bg-white p-6 sm:p-8 flex flex-col justify-between shadow-sm">
+          <div className="rounded-2xl border border-red-200 bg-slate-50/60 p-6 sm:p-8 flex flex-col justify-between shadow-xs">
             <div>
               <div className="flex items-center justify-between border-b border-slate-200 pb-4">
                 <div>
@@ -56,7 +56,7 @@ export const EquipmentComparison: React.FC<{ config?: typeof siteConfigEn }> = (
           </div>
 
           {/* Ultimate Tree Service LLC */}
-          <div className="rounded-2xl border-2 border-emerald-500 bg-white p-6 sm:p-8 flex flex-col justify-between shadow-xl relative">
+          <div className="rounded-2xl border-2 border-emerald-500 bg-white p-6 sm:p-8 flex flex-col justify-between shadow-lg relative">
             {/* Top highlight ribbon */}
             <div className="absolute -top-3.5 right-6 rounded-full bg-emerald-600 px-3.5 py-1 text-xs font-extrabold text-white uppercase tracking-wider shadow-md">
               {cfg.ui.commercialRibbon}
@@ -96,7 +96,7 @@ export const EquipmentComparison: React.FC<{ config?: typeof siteConfigEn }> = (
                   href={`tel:${cfg.phoneRaw}`}
                   className="ml-3 shrink-0 rounded-lg bg-emerald-600 px-3.5 py-1.5 text-xs font-bold text-white hover:bg-emerald-700 shadow-sm"
                 >
-                  {cfg.ui.callBrad}
+                  {cfg.ui.callNow || cfg.ui.callBrad}
                 </a>
               </div>
             </div>

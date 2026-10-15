@@ -5,7 +5,7 @@ export const EquipmentGallery: React.FC<{ config?: typeof siteConfigEn }> = ({ c
   const cfg = config || siteConfig
 
   return (
-    <section id="equipment" className="py-20 bg-white border-t border-slate-200">
+    <section id="equipment" className="py-20 bg-slate-50 border-y border-slate-200">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto">
@@ -65,7 +65,7 @@ export const EquipmentGallery: React.FC<{ config?: typeof siteConfigEn }> = ({ c
         </div>
 
         {/* Bottom Callout */}
-        <div className="mt-12 rounded-2xl border border-slate-200 bg-slate-50/90 p-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left shadow-sm">
+        <div className="mt-12 rounded-2xl border border-slate-200 bg-white p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left shadow-sm">
           <div className="flex items-center gap-3">
             <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-emerald-100 text-emerald-800 border border-emerald-300 font-bold">
               ✓
@@ -73,13 +73,13 @@ export const EquipmentGallery: React.FC<{ config?: typeof siteConfigEn }> = ({ c
             <div>
               <h4 className="text-sm font-bold text-slate-900">
                 {cfg.lang === 'ru'
-                  ? 'Все работы выполняют лично Роберт и Кэлвин на собственной спецтехнике'
-                  : 'All jobs are operated directly by Robert & Calvin with commercial equipment'}
+                  ? 'Сложный доступ или аварийное дерево после шторма?'
+                  : 'Tight access or hazardous tree removal after a storm?'}
               </h4>
               <p className="text-xs text-slate-600">
                 {cfg.lang === 'ru'
-                  ? 'Без субподрядчиков, без случайных людей с улицы и с гарантией идеальной чистоты на участке.'
-                  : 'No subcontractors, no day-labor surprises, and guaranteed zero-trace site cleanup.'}
+                  ? 'Подаем автокран и вышку 18м для безопасного спила без повреждения крыш и бассейнов.'
+                  : 'Dispatched with crane & 60ft bucket lift for safe takedowns with zero structure damage.'}
               </p>
             </div>
           </div>
@@ -88,7 +88,7 @@ export const EquipmentGallery: React.FC<{ config?: typeof siteConfigEn }> = ({ c
             href={`tel:${cfg.phoneRaw}`}
             className="shrink-0 inline-flex items-center gap-2 rounded-xl bg-emerald-600 px-5 py-3 text-sm font-bold text-white shadow-md shadow-emerald-600/25 transition hover:bg-emerald-700 active:scale-95"
           >
-            <span>{cfg.ui.callBrad}</span>
+            <span>{cfg.ui.callNow || cfg.ui.callBrad}</span>
             <span className="font-mono text-emerald-100">({cfg.phone})</span>
           </a>
         </div>

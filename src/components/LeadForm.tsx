@@ -21,9 +21,9 @@ export const LeadForm: React.FC<{ config?: typeof siteConfigEn }> = ({ config })
   }
 
   return (
-    <section id="estimate-form" className="py-20 bg-gradient-to-b from-slate-50 to-emerald-50/30 scroll-mt-24 border-t border-slate-200">
+    <section id="estimate-form" className="py-20 bg-white scroll-mt-24">
       <div className="mx-auto max-w-4xl px-4 sm:px-6">
-        <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white p-8 sm:p-12 shadow-xl shadow-slate-200/60">
+        <div className="overflow-hidden rounded-3xl border border-slate-200 bg-slate-50/70 p-8 sm:p-12 shadow-md">
           {/* Header */}
           <div className="text-center max-w-2xl mx-auto">
             <span className="inline-flex items-center gap-1.5 rounded-full border border-emerald-300 bg-emerald-50 px-3.5 py-1 text-xs font-bold uppercase tracking-wider text-emerald-800">

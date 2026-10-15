@@ -27,11 +27,11 @@ export const LandingView: React.FC<{ config: typeof siteConfigEn }> = ({ config 
         {/* 4 Trust Pillars / Badges */}
         <TrustBadges config={config} />
 
-        {/* 3-Step Visual Photo Estimate Process */}
-        <TextEstimateCard config={config} />
-
         {/* 6 Core Contractor Services */}
         <ServicesGrid config={config} />
+
+        {/* 3-Step Visual Photo Estimate Process */}
+        <TextEstimateCard config={config} />
 
         {/* Technical Specification Comparison (Unlicensed Hacks vs UTS) */}
         <EquipmentComparison config={config} />

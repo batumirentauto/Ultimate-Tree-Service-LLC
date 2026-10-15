@@ -5,9 +5,9 @@ export const ServiceAreas: React.FC<{ config?: typeof siteConfigEn }> = ({ confi
   const cfg = config || siteConfig
 
   return (
-    <section className="py-16 bg-white border-t border-slate-200">
+    <section className="py-16 bg-slate-50 border-y border-slate-200">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
-        <div className="rounded-2xl border border-slate-200 bg-slate-50/80 p-8 sm:p-10 shadow-sm">
+        <div className="rounded-2xl border border-slate-200 bg-white p-8 sm:p-10 shadow-sm">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
             <div>
               <span className="text-xs font-bold uppercase tracking-wider text-emerald-700">
