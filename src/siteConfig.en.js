@@ -11,7 +11,7 @@ export const siteConfigEn = {
   zip: "34240",
   streetAddress: "1820 Par Pl",
   fullAddress: "1820 Par Pl, Sarasota, FL 34240",
-  mapsUrl: "https://maps.google.com/?q=1820+Par+Pl,+Sarasota,+FL+34240",
+  mapsUrl: "https://maps.app.goo.gl/RPhcbtYeQcbUXjET8",
   rating: "4.9",
   reviewCount: "129",
   licenseBadge: "Licensed & Fully Insured ($1M+)",
@@ -77,7 +77,7 @@ export const siteConfigEn = {
     title: "How to Get a Binding Quote by Text",
     step1: "Snap 2 clear photos: one wide shot showing nearby structures and one close-up of the tree base.",
     step2: "Note any obstacles: pool cage, roof overhang, utility wires, sprinkler lines, or narrow gates.",
-    step3: "Text them to (941) 361-9032. The owners will review and reply with a binding dollar quote in 15 minutes."
+    step3: "Text them to (941) 361-9032. The owners will review and reply with a binding dollar quote within 1 hour."
   },
 
   realisticComparison: {
@@ -217,7 +217,7 @@ export const siteConfigEn = {
     textPhotos: "Text Photos",
     callNow: "Call Us",
     callBrad: "Call Us", // backward compat
-    fastResponse: "15-Minute Response:",
+    fastResponse: "Response Within 1 Hour:",
     fastResponseDesc: "Text 2 photos of your tree or stump to get a binding dollar quote before dispatch.",
     heroCheckmarks: [
       { strong: "Binding Photo Estimate", text: "fixed dollar quote from photos before we head out — zero price jumps on site" },
@@ -265,7 +265,7 @@ export const siteConfigEn = {
     formTitle: "Request Your Free Tree Service Estimate",
     formSub: "Submissions are reviewed directly by the owners. No high-pressure sales reps, no hidden fees.",
     formSuccessTitle: "Estimate Request Received!",
-    formSuccessSub: "Thank you! We will review your details and reach out within 15 minutes.",
+    formSuccessSub: "Thank you! We will review your details and reach out within 1 hour.",
     formTextPhotosNow: "Text Photos Now for Faster Quote",
     formName: "Full Name",
     formPhone: "Phone Number",

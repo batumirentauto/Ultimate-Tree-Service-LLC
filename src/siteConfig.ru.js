@@ -11,7 +11,7 @@ export const siteConfigRu = {
   zip: "34240",
   streetAddress: "1820 Par Pl",
   fullAddress: "1820 Par Pl, Sarasota, FL 34240",
-  mapsUrl: "https://maps.google.com/?q=1820+Par+Pl,+Sarasota,+FL+34240",
+  mapsUrl: "https://maps.app.goo.gl/RPhcbtYeQcbUXjET8",
   rating: "4.9",
   reviewCount: "129",
   licenseBadge: "Лицензированы и застрахованы ($1M+)",
@@ -77,7 +77,7 @@ export const siteConfigRu = {
     title: "Как получить точную смету по SMS / WhatsApp",
     step1: "Сделайте 2 фото: общий план с окружающими постройками и фото ствола у земли.",
     step2: "Укажите препятствия: крыша, сетка бассейна, провода, спринклеры или забор.",
-    step3: "Отправьте фото на номер (941) 361-9032. Владельцы рассчитают твердую цену в течение 15 минут."
+    step3: "Отправьте фото на номер (941) 361-9032. Владельцы рассчитают твердую цену в течение 1 часа."
   },
 
   realisticComparison: {
@@ -217,7 +217,7 @@ export const siteConfigRu = {
     textPhotos: "Отправить фото",
     callNow: "Позвонить",
     callBrad: "Позвонить", // backward compat
-    fastResponse: "Ответ за 15 минут:",
+    fastResponse: "Ответ в течение 1 часа:",
     fastResponseDesc: "Пришлите 2 фото по SMS, и владельцы рассчитают фиксированную стоимость без выезда.",
     heroCheckmarks: [
       { strong: "Фиксированная смета по фото", text: "точный расчет цены до начала работ — без накруток и доплат на объекте" },
@@ -265,7 +265,7 @@ export const siteConfigRu = {
     formTitle: "Запросить расчет стоимости работ",
     formSub: "Заявки рассматриваются напрямую владельцами компании. Без навязчивых звонков и скрытых комиссий.",
     formSuccessTitle: "Заявка успешно отправлена!",
-    formSuccessSub: "Спасибо! Мы изучим детали и свяжемся с вами в течение 15 минут.",
+    formSuccessSub: "Спасибо! Мы изучим детали и свяжемся с вами в течение 1 часа.",
     formTextPhotosNow: "Отправить фото по SMS для ускорения расчета",
     formName: "Ваше имя",
     formPhone: "Номер телефона",
