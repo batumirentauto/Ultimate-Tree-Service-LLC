@@ -1,12 +1,14 @@
 import React from 'react'
-import { siteConfig } from '../siteConfig'
+import { siteConfig, siteConfigEn } from '../siteConfig'
 
-export const MobileActionBar: React.FC = () => {
+export const MobileActionBar: React.FC<{ config?: typeof siteConfigEn }> = ({ config }) => {
+  const cfg = config || siteConfig
+
   return (
     <div className="fixed bottom-0 left-0 right-0 z-50 border-t border-slate-200 bg-white/95 p-3 backdrop-blur-lg md:hidden shadow-2xl">
       <div className="grid grid-cols-2 gap-2.5">
         <a
-          href={`tel:${siteConfig.phoneRaw}`}
+          href={`tel:${cfg.phoneRaw}`}
           className="flex items-center justify-center gap-2 rounded-xl bg-emerald-600 px-3 py-3 text-sm font-bold text-white shadow-md shadow-emerald-600/25 transition active:bg-emerald-700"
         >
           <svg
@@ -22,11 +24,11 @@ export const MobileActionBar: React.FC = () => {
               d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
             />
           </svg>
-          <span>{siteConfig.ui.callBrad}</span>
+          <span>{cfg.ui.callBrad}</span>
         </a>
 
         <a
-          href={`sms:${siteConfig.phoneRaw}?&body=${encodeURIComponent(siteConfig.lang === 'ru' ? 'Здравствуйте! Отправляю фото дерева/пня для расчета стоимости:' : 'Hi Robert & Calvin, here are photos of my tree/stump for an estimate:')}`}
+          href={`sms:${cfg.phoneRaw}?&body=${encodeURIComponent(cfg.lang === 'ru' ? 'Здравствуйте! Отправляю фото дерева/пня для расчета стоимости:' : 'Hi Robert & Calvin, here are photos of my tree/stump for an estimate:')}`}
           className="flex items-center justify-center gap-2 rounded-xl bg-amber-500 px-3 py-3 text-sm font-bold text-slate-950 shadow-md shadow-amber-500/25 transition active:bg-amber-600 border border-amber-600/30"
         >
           <svg
@@ -47,7 +49,7 @@ export const MobileActionBar: React.FC = () => {
               d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"
             />
           </svg>
-          <span>{siteConfig.ui.textPhotos}</span>
+          <span>{cfg.ui.textPhotos}</span>
         </a>
       </div>
     </div>

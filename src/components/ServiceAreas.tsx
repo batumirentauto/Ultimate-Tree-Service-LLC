@@ -1,7 +1,9 @@
 import React from 'react'
-import { siteConfig } from '../siteConfig'
+import { siteConfig, siteConfigEn } from '../siteConfig'
 
-export const ServiceAreas: React.FC = () => {
+export const ServiceAreas: React.FC<{ config?: typeof siteConfigEn }> = ({ config }) => {
+  const cfg = config || siteConfig
+
   return (
     <section className="py-16 bg-white border-t border-slate-200">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
@@ -9,22 +11,22 @@ export const ServiceAreas: React.FC = () => {
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
             <div>
               <span className="text-xs font-bold uppercase tracking-wider text-emerald-700">
-                {siteConfig.ui.areasCategory}
+                {cfg.ui.areasCategory}
               </span>
               <h2 className="mt-1 text-2xl sm:text-3xl font-extrabold text-slate-900">
-                {siteConfig.ui.areasTitle} {siteConfig.city} & Suncoast Florida
+                {cfg.ui.areasTitle} {cfg.city} &amp; Suncoast Florida
               </h2>
               <p className="mt-2 text-sm text-slate-600">
-                {siteConfig.ui.areasSub}
+                {cfg.ui.areasSub}
               </p>
             </div>
 
             <div className="shrink-0">
               <a
-                href={`tel:${siteConfig.phoneRaw}`}
+                href={`tel:${cfg.phoneRaw}`}
                 className="inline-flex items-center gap-2 rounded-xl bg-white px-4 py-2.5 text-xs font-bold text-slate-800 hover:bg-slate-100 transition border border-slate-300 shadow-xs"
               >
-                <span>{siteConfig.ui.checkNeighborhood}</span>
+                <span>{cfg.ui.checkNeighborhood}</span>
                 <span className="text-emerald-600 font-bold">→</span>
               </a>
             </div>
@@ -32,7 +34,7 @@ export const ServiceAreas: React.FC = () => {
 
           {/* Cities Tags Grid */}
           <div className="mt-8 flex flex-wrap gap-2.5">
-            {siteConfig.serviceAreas.map((city) => (
+            {cfg.serviceAreas.map((city) => (
               <span
                 key={city}
                 className="inline-flex items-center gap-2 rounded-lg border border-slate-200 bg-white px-3.5 py-2 text-xs font-semibold text-slate-700 transition hover:border-emerald-500 hover:text-emerald-800 shadow-xs"
@@ -41,7 +43,7 @@ export const ServiceAreas: React.FC = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
-                {city}, {siteConfig.state}
+                {city}, {cfg.state}
               </span>
             ))}
           </div>
@@ -50,10 +52,10 @@ export const ServiceAreas: React.FC = () => {
           <div className="mt-6 flex flex-col sm:flex-row sm:items-center justify-between gap-3 pt-6 border-t border-slate-200 text-xs text-slate-500">
             <div className="flex items-center gap-2">
               <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
-              <span>{siteConfig.ui.dispatchNotice} • <strong className="text-slate-800">{siteConfig.workingHours}</strong></span>
+              <span>{cfg.ui.dispatchNotice} • <strong className="text-slate-800">{cfg.workingHours}</strong></span>
             </div>
             <a
-              href={siteConfig.mapsUrl}
+              href={cfg.mapsUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 font-semibold text-emerald-700 hover:text-emerald-800 transition underline underline-offset-2"
@@ -62,7 +64,7 @@ export const ServiceAreas: React.FC = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
               </svg>
-              <span>{siteConfig.addressNotes}</span>
+              <span>{cfg.addressNotes}</span>
             </a>
           </div>
         </div>

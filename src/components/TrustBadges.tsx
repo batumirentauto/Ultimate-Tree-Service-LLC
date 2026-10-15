@@ -1,5 +1,5 @@
 import React from 'react'
-import { siteConfig } from '../siteConfig'
+import { siteConfig, siteConfigEn } from '../siteConfig'
 
 const icons = [
   // Owner on site icon (hard hat / arborist user)
@@ -28,11 +28,13 @@ const icons = [
   ),
 ]
 
-export const TrustBadges: React.FC = () => {
+export const TrustBadges: React.FC<{ config?: typeof siteConfigEn }> = ({ config }) => {
+  const cfg = config || siteConfig
+
   return (
     <section className="relative -mt-6 z-20 mx-auto max-w-7xl px-4 sm:px-6">
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
-        {siteConfig.trustBadges.map((badge, index) => (
+        {cfg.trustBadges.map((badge, index) => (
           <div
             key={badge.title}
             className="flex items-start gap-4 rounded-xl border border-slate-200 bg-white p-4 shadow-md shadow-slate-200/60 transition hover:shadow-lg hover:border-emerald-400"
